@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.weather{
+    place-self :center;
+    padding:40px;
+    border-radius :10px;
+    background :linear-gradient(30deg, yellow, blue);
+}
+
+.search-btn,.temp{
+    
+    background : grey;
+    margin:0px 12px;
+    border-radius:10px;
+    border-color : white;
+    color:white ;
+    box-shadow: 5px white;
+    font-size:19px;
+    padding: 0px 15px;
+    cursor:url('../src/assets/thor.cur'),auto;
+}
+.search-bar input{
+    background:white;
+    border-radius:40px;
+    height:50px;
+    border:none;
+    outline:none;
+    padding-left: 25px;
+    color:#86058b;
+    font-size: 18px;
+}
+img{
+    width:190px;
+    height:190px;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.temperature,.location{
+    text-align:center;
+    font-size:18px;
+}
+.red{
+    text-shadow: 2px 2px 5px red 
+}
+
+.white{
+    text-shadow: 2px 2px 5px white 
+}
+
+.spinner{
+    border:4px solid rgb(7, 135, 190);
+    border-top: 4px solid rgb(2, 11, 12);
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 2rem;
+    height: 2rem;
+    animation: spin 1s linear infinite;
+    text-align: center;
+}
+
+@keyframes spin {
+    0%{transform:rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
